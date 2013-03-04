@@ -434,6 +434,7 @@ function ekskey(data, key, P, S) {
 function crypt_raw(password, salt, log_rounds, progress) {
 	var rounds;
 	var j;
+        var lr;
 	var cdata = bf_crypt_ciphertext.slice();
 	var clen = cdata.length;
 	var one_percent;
